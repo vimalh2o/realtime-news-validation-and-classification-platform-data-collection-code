@@ -31,7 +31,7 @@ from sentence_transformers import SentenceTransformer
 embed_model = SentenceTransformer('all-MiniLM-L6-v2')
 
 # MongoDB Setup
-mongo_client = pymongo.MongoClient(os.getenv("MONGO_URI"))
+mongo_client = pymongo.MongoClient(os.getenv("mongodb+srv://vimal:vimal@cluster0.2678f.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"))
 db = mongo_client['news_db']
 news_collection = db['news_data']
 
